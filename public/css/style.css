@@ -1,0 +1,595 @@
+/* M1778-Dungen - 2009 Retro Style */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #1a1a2e;
+  background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23222244' fill-opacity='0.4'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+  font-family: 'Trebuchet MS', 'Lucida Sans', Arial, sans-serif;
+  color: #e0e0e0;
+  min-height: 100vh;
+}
+
+.container {
+  max-width: 850px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Header */
+.header {
+  text-align: center;
+  padding: 30px 0 10px;
+}
+
+.header h1 {
+  font-size: 2.8em;
+  color: #ffd700;
+  text-shadow: 2px 2px 4px #000, 0 0 20px #ffd700, 0 0 40px #ff8c00;
+  letter-spacing: 3px;
+}
+
+.subtitle {
+  font-size: 1.2em;
+  color: #aaa;
+  margin-top: 5px;
+  font-style: italic;
+}
+
+/* Main Box */
+.main-box {
+  background: linear-gradient(180deg, #16213e 0%, #0f3460 100%);
+  border: 3px solid #e94560;
+  border-radius: 10px;
+  padding: 30px;
+  margin: 20px 0;
+  box-shadow: 0 0 20px rgba(233, 69, 96, 0.3), inset 0 0 30px rgba(0,0,0,0.3);
+}
+
+.main-box h2 {
+  text-align: center;
+  color: #ffd700;
+  font-size: 1.8em;
+  margin-bottom: 10px;
+  text-shadow: 1px 1px 3px #000;
+}
+
+.main-box h3 {
+  text-align: center;
+  color: #e94560;
+  font-size: 1.4em;
+  margin: 25px 0 15px;
+  text-shadow: 1px 1px 2px #000;
+}
+
+.divider {
+  height: 3px;
+  background: linear-gradient(90deg, transparent, #e94560, #ffd700, #e94560, transparent);
+  margin: 15px 0;
+}
+
+.description {
+  text-align: center;
+  font-size: 1.1em;
+  line-height: 1.6;
+  margin: 10px 0;
+  color: #ccc;
+}
+
+.highlight {
+  color: #ffd700;
+  font-weight: bold;
+  font-size: 1.1em;
+}
+
+/* Prize Table */
+.prize-table-section {
+  margin: 20px 0;
+}
+
+.prize-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 10px auto;
+  max-width: 600px;
+}
+
+.prize-table th,
+.prize-table td {
+  border: 2px solid #e94560;
+  padding: 10px 15px;
+  text-align: center;
+}
+
+.prize-table th {
+  background: #e94560;
+  color: #fff;
+  font-size: 1.05em;
+  text-transform: uppercase;
+}
+
+.prize-table tbody tr:nth-child(odd) {
+  background: rgba(255,255,255,0.05);
+}
+
+.prize-table tbody tr:nth-child(even) {
+  background: rgba(255,255,255,0.02);
+}
+
+.prize-table .gold-row {
+  background: rgba(255, 215, 0, 0.15) !important;
+  color: #ffd700;
+  font-weight: bold;
+}
+
+.prize-table tfoot td {
+  background: #16213e;
+  color: #ffd700;
+  font-size: 1.15em;
+  border-top: 3px solid #ffd700;
+}
+
+/* Rules */
+.rules-section ul {
+  list-style: none;
+  padding: 0 20px;
+}
+
+.rules-section li {
+  padding: 6px 0;
+  font-size: 1.05em;
+  color: #ccc;
+}
+
+.rules-section li::before {
+  content: "▸ ";
+  color: #e94560;
+  font-weight: bold;
+}
+
+/* CTA */
+.cta-section {
+  text-align: center;
+  margin-top: 30px;
+  padding-top: 20px;
+  border-top: 2px solid rgba(233, 69, 96, 0.3);
+}
+
+.cta-text {
+  font-size: 1.3em;
+  color: #ffd700;
+  margin-bottom: 15px;
+}
+
+.btn-challenge {
+  display: inline-block;
+  padding: 15px 40px;
+  font-size: 1.3em;
+  font-weight: bold;
+  color: #fff;
+  background: linear-gradient(180deg, #e94560 0%, #c0392b 100%);
+  border: 3px solid #ffd700;
+  border-radius: 8px;
+  cursor: pointer;
+  text-decoration: none;
+  text-shadow: 1px 1px 2px #000;
+  box-shadow: 0 4px 15px rgba(233, 69, 96, 0.4), 0 0 10px rgba(255, 215, 0, 0.2);
+  transition: all 0.2s;
+  font-family: inherit;
+}
+
+.btn-challenge:hover {
+  background: linear-gradient(180deg, #ff6b81 0%, #e94560 100%);
+  box-shadow: 0 4px 20px rgba(233, 69, 96, 0.6), 0 0 20px rgba(255, 215, 0, 0.4);
+  transform: translateY(-2px);
+}
+
+.btn-challenge:active {
+  transform: translateY(0);
+}
+
+/* Login Form */
+.login-box {
+  max-width: 500px;
+  margin: 20px auto;
+}
+
+.login-form {
+  text-align: center;
+  margin: 25px 0;
+}
+
+.login-form label {
+  display: block;
+  font-size: 1.15em;
+  color: #ffd700;
+  margin-bottom: 10px;
+}
+
+.login-form input[type="password"],
+.login-form input[type="text"] {
+  width: 100%;
+  max-width: 350px;
+  padding: 12px 15px;
+  font-size: 1.1em;
+  border: 2px solid #e94560;
+  border-radius: 5px;
+  background: #0a0a23;
+  color: #fff;
+  text-align: center;
+  outline: none;
+  font-family: inherit;
+}
+
+.login-form input:focus {
+  border-color: #ffd700;
+  box-shadow: 0 0 10px rgba(255, 215, 0, 0.3);
+}
+
+.login-form .btn-challenge {
+  display: block;
+  margin: 20px auto 0;
+  font-size: 1.1em;
+  padding: 12px 30px;
+}
+
+.error-msg {
+  color: #ff6b6b;
+  font-weight: bold;
+  margin-top: 15px;
+  font-size: 1em;
+}
+
+.success-msg {
+  color: #2ecc71;
+  font-weight: bold;
+  margin-top: 15px;
+  font-size: 1em;
+}
+
+.back-link {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.back-link a {
+  color: #aaa;
+  text-decoration: none;
+}
+
+.back-link a:hover {
+  color: #ffd700;
+}
+
+/* Challenges Page */
+.challenges-header {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.donation-tracker {
+  text-align: center;
+  background: linear-gradient(180deg, #1a3a1a 0%, #0d2b0d 100%);
+  border: 2px solid #2ecc71;
+  border-radius: 8px;
+  padding: 15px;
+  margin: 15px 0;
+  box-shadow: 0 0 15px rgba(46, 204, 113, 0.2);
+}
+
+.donation-tracker h3 {
+  color: #2ecc71 !important;
+  margin: 0 0 5px !important;
+}
+
+.donation-amount {
+  font-size: 2em;
+  color: #2ecc71;
+  font-weight: bold;
+  text-shadow: 0 0 10px rgba(46, 204, 113, 0.5);
+}
+
+/* Level Cards */
+.levels-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.level-card {
+  background: linear-gradient(180deg, #1a1a3e 0%, #16213e 100%);
+  border: 2px solid #555;
+  border-radius: 8px;
+  padding: 20px;
+  transition: all 0.2s;
+}
+
+.level-card.unlocked {
+  border-color: #e94560;
+  cursor: pointer;
+}
+
+.level-card.unlocked:hover {
+  border-color: #ffd700;
+  box-shadow: 0 0 15px rgba(255, 215, 0, 0.2);
+}
+
+.level-card.completed {
+  border-color: #2ecc71;
+  background: linear-gradient(180deg, #1a2e1a 0%, #162316 100%);
+}
+
+.level-card.locked {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.level-card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 8px;
+}
+
+.level-card-header h4 {
+  font-size: 1.2em;
+  color: #ffd700;
+}
+
+.level-prize {
+  color: #2ecc71;
+  font-weight: bold;
+  font-size: 1em;
+}
+
+.level-status {
+  font-size: 0.9em;
+  color: #aaa;
+}
+
+.level-status.completed-text {
+  color: #2ecc71;
+}
+
+/* Game Area */
+.game-area {
+  display: none;
+  background: #0a0a23;
+  border: 2px solid #e94560;
+  border-radius: 8px;
+  padding: 25px;
+  margin-top: 15px;
+  text-align: center;
+}
+
+.game-area.active {
+  display: block;
+}
+
+.game-area h3 {
+  color: #ffd700;
+  margin-bottom: 15px;
+}
+
+.game-area p {
+  margin: 10px 0;
+  line-height: 1.5;
+}
+
+.game-input {
+  width: 100%;
+  max-width: 400px;
+  padding: 10px 15px;
+  font-size: 1.1em;
+  border: 2px solid #e94560;
+  border-radius: 5px;
+  background: #16213e;
+  color: #fff;
+  text-align: center;
+  outline: none;
+  margin: 10px auto;
+  display: block;
+  font-family: inherit;
+}
+
+.game-input:focus {
+  border-color: #ffd700;
+  box-shadow: 0 0 10px rgba(255, 215, 0, 0.3);
+}
+
+.btn-submit {
+  display: inline-block;
+  padding: 10px 25px;
+  font-size: 1em;
+  font-weight: bold;
+  color: #fff;
+  background: linear-gradient(180deg, #e94560 0%, #c0392b 100%);
+  border: 2px solid #ffd700;
+  border-radius: 5px;
+  cursor: pointer;
+  margin: 10px 5px;
+  font-family: inherit;
+  text-shadow: 1px 1px 2px #000;
+}
+
+.btn-submit:hover {
+  background: linear-gradient(180deg, #ff6b81 0%, #e94560 100%);
+}
+
+.btn-close {
+  display: inline-block;
+  padding: 8px 20px;
+  font-size: 0.9em;
+  color: #aaa;
+  background: #333;
+  border: 1px solid #555;
+  border-radius: 5px;
+  cursor: pointer;
+  margin: 10px 5px;
+  font-family: inherit;
+}
+
+.btn-close:hover {
+  color: #fff;
+  border-color: #aaa;
+}
+
+.game-feedback {
+  margin-top: 15px;
+  font-size: 1.1em;
+  font-weight: bold;
+}
+
+.game-feedback.correct {
+  color: #2ecc71;
+}
+
+.game-feedback.wrong {
+  color: #ff6b6b;
+}
+
+/* Reaction Game */
+.reaction-box {
+  width: 300px;
+  height: 200px;
+  margin: 20px auto;
+  border: 3px solid #555;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.3em;
+  font-weight: bold;
+  cursor: pointer;
+  user-select: none;
+  transition: background 0.1s;
+}
+
+.reaction-box.waiting {
+  background: #8b0000;
+  color: #fff;
+}
+
+.reaction-box.ready {
+  background: #006400;
+  color: #fff;
+}
+
+.reaction-box.result {
+  background: #16213e;
+  color: #ffd700;
+}
+
+/* Bot Challenge */
+.bot-challenge-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  max-width: 300px;
+  margin: 15px auto;
+}
+
+.bot-tile {
+  width: 80px;
+  height: 80px;
+  border: 2px solid #e94560;
+  border-radius: 5px;
+  background: #16213e;
+  color: #fff;
+  font-size: 2em;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.2s;
+}
+
+.bot-tile:hover {
+  border-color: #ffd700;
+  background: #1a2a4e;
+}
+
+.bot-tile.selected {
+  background: #2ecc71;
+  border-color: #2ecc71;
+}
+
+/* Completion Screen */
+.completion-screen {
+  display: none;
+  text-align: center;
+  padding: 30px;
+}
+
+.completion-screen.active {
+  display: block;
+}
+
+.completion-screen h2 {
+  color: #ffd700;
+  font-size: 2em;
+  margin-bottom: 15px;
+}
+
+/* Footer */
+.footer {
+  text-align: center;
+  padding: 20px 0;
+  color: #666;
+  font-size: 0.9em;
+}
+
+.footer strong {
+  color: #e94560;
+}
+
+.footer-small {
+  font-size: 0.85em;
+  margin-top: 5px;
+  color: #555;
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #1a1a2e;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #e94560;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #ff6b81;
+}
+
+/* Marquee text for 2009 vibes */
+.marquee {
+  overflow: hidden;
+  white-space: nowrap;
+  background: linear-gradient(90deg, #e94560, #ffd700, #e94560);
+  color: #000;
+  font-weight: bold;
+  padding: 5px 0;
+  margin: 10px 0;
+  border-radius: 3px;
+}
+
+.marquee span {
+  display: inline-block;
+  animation: marquee 15s linear infinite;
+}
+
+@keyframes marquee {
+  0% { transform: translateX(100%); }
+  100% { transform: translateX(-100%); }
+}

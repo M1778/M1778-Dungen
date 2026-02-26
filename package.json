@@ -1,0 +1,15 @@
+{
+  "name": "m1778-dungen",
+  "version": "1.0.0",
+  "description": "M1778-Dungen - A challenge dungeon for Pony.gamer streamer",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node server.js"
+  },
+  "author": "M1778",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}

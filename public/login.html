@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>M1778-Dungen | Enter the Dungeon</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <h1>⚔️ M1778-Dungen ⚔️</h1>
+      <p class="subtitle">Authentication Required</p>
+    </div>
+
+    <div class="main-box login-box">
+      <h2>🔒 Enter the Dungeon 🔒</h2>
+      <div class="divider"></div>
+      <p class="description">
+        Only <span class="highlight">Pony.gamer</span> may enter!<br>
+        Enter the secret password to begin the challenge.
+      </p>
+
+      <div class="login-form">
+        <label for="password">🔑 Secret Password:</label>
+        <input type="password" id="password" placeholder="Enter password here..." autocomplete="off">
+        <button id="btn-enter" class="btn-challenge" onclick="checkPassword()">🚪 Enter Dungeon</button>
+        <p id="error-msg" class="error-msg" style="display:none;">❌ Wrong password! Only Pony.gamer knows the secret! ❌</p>
+      </div>
+
+      <div class="back-link">
+        <a href="index.html">&laquo; Back to Homepage</a>
+      </div>
+    </div>
+
+    <div class="footer">
+      <p>Created by <strong>M1778</strong> | M1778-Dungen &copy; 2024</p>
+    </div>
+  </div>
+
+  <script src="js/auth.js"></script>
+</body>
+</html>
