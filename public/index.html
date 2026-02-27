@@ -7,6 +7,7 @@
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+  <div class="particles" id="particles"></div>
   <div class="container">
     <div class="header">
       <h1>⚔️ M1778-Dungen ⚔️</h1>
@@ -22,8 +23,11 @@
           <span class="highlight">Pony.gamer</span>! 🐴
         </p>
         <p class="description">
-          Inside this dungeon, there are <strong>10 levels</strong> of increasingly difficult challenges.
+          Inside this dungeon, there are <strong>15 levels</strong> of increasingly difficult puzzles.
           Each level you conquer adds to your future donation pool!
+        </p>
+        <p class="description" style="color:#e94560;">
+          ⚠️ No chat help allowed — these are <strong>skill-based puzzles</strong> only! ⚠️
         </p>
       </div>
 
@@ -44,12 +48,17 @@
               <td>100,000 $</td>
             </tr>
             <tr>
-              <td>Level 6 - 9</td>
+              <td>Level 6 - 10</td>
               <td>30,000 $</td>
-              <td>120,000 $</td>
+              <td>150,000 $</td>
+            </tr>
+            <tr>
+              <td>Level 11 - 14</td>
+              <td>40,000 $</td>
+              <td>160,000 $</td>
             </tr>
             <tr class="gold-row">
-              <td>Level 10 (FINAL)</td>
+              <td>Level 15 (FINAL)</td>
               <td>100,000 $</td>
               <td>100,000 $</td>
             </tr>
@@ -57,10 +66,13 @@
           <tfoot>
             <tr>
               <td colspan="2"><strong>Grand Total</strong></td>
-              <td><strong>320,000 $</strong></td>
+              <td><strong>510,000 $</strong></td>
             </tr>
           </tfoot>
         </table>
+        <p style="text-align:center; color:#e94560; margin-top:10px; font-size:0.95em;">
+          💸 You can <strong>skip</strong> any level for a <strong>−50,000 $</strong> penalty!
+        </p>
       </div>
 
       <div class="rules-section">
@@ -69,6 +81,7 @@
           <li>Only <strong>Pony.gamer</strong> can enter the challenge (password protected!)</li>
           <li>You must complete each level to unlock the next one</li>
           <li>Each completed level adds to the donation pool</li>
+          <li>Skipping a level costs <strong>50,000 $</strong> from your total</li>
           <li>No cheating! (We're watching 👀)</li>
           <li>Have fun and good luck! 🍀</li>
         </ul>
@@ -76,14 +89,29 @@
 
       <div class="cta-section">
         <p class="cta-text">Are you ready to enter the dungeon?</p>
-        <a href="login.html" class="btn-challenge">⚡ Open Challenge ⚡</a>
+        <a href="login.html" class="btn-challenge pulse-btn">⚡ Open Challenge ⚡</a>
       </div>
     </div>
 
     <div class="footer">
-      <p>Created by <strong>M1778</strong> | M1778-Dungen &copy; 2024</p>
+      <p>Created by <strong>M1778</strong> | M1778-Dungen &copy; 2026</p>
       <p class="footer-small">Good luck, Pony.gamer! 🐴✨</p>
     </div>
   </div>
+  <script>
+    (function() {
+      var p = document.getElementById('particles');
+      for (var i = 0; i < 30; i++) {
+        var s = document.createElement('span');
+        s.className = 'particle';
+        s.style.left = Math.random() * 100 + '%';
+        s.style.animationDelay = Math.random() * 8 + 's';
+        s.style.animationDuration = (6 + Math.random() * 8) + 's';
+        s.style.fontSize = (8 + Math.random() * 14) + 'px';
+        s.textContent = ['✨','⚔️','💰','🎮','🔥','⭐','💎'][Math.floor(Math.random()*7)];
+        p.appendChild(s);
+      }
+    })();
+  </script>
 </body>
 </html>

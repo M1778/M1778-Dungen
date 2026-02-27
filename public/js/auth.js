@@ -1,6 +1,6 @@
 // M1778-Dungen Authentication
 // Password hash (SHA256 of the secret password)
-var PASSWORD_HASH = '0b6750af4ed8ddae40b61f4ae1d57590cfee52ca473c5e140edaeda31e21204c';
+var PASSWORD_HASH = 'be374b94248255475a4b204cda28d635deada5f144ee5faa5b0c9e943f4a6278';
 var COOKIE_NAME = 'm1778_dungen_auth';
 var COOKIE_VALUE = 'pony_gamer_verified';
 
